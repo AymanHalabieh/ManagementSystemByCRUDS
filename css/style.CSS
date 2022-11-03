@@ -44,7 +44,7 @@ body {
   outline: 0;
   border-radius: 5px;
   color: white;
-  font-size: var(--FONT1);
+  font-size: 18px;
   font-weight: bold;
   background-color: rgb(17, 16, 16);
   margin: 10px;
@@ -72,7 +72,6 @@ body {
   margin: auto;
   width: var(--size);
   height: auto;
-  /* background-color: blue; */
 }
 .Form .SubFormInput input {
   display: var(--block);
@@ -83,7 +82,7 @@ body {
   border-radius: 5px;
   width: 19%;
   color: white;
-  font-size: var(--FONT1);
+  font-size: 20px;
   font-weight: bold;
   background-color: rgb(17, 16, 16);
   transition: all 0.5s;
@@ -91,8 +90,6 @@ body {
 
 .Form .SubFormInput .SpanDiv {
   display: var(--block);
-
-  /* background-color: red; */
   justify-content: left;
 }
 .Form .SubFormInput span {
@@ -102,23 +99,28 @@ body {
   border: 0;
   border-radius: 5px;
   color: white;
-  font-size: var(--FONT1);
+  font-size: 20px;
   font-weight: bold;
-
-  /* background-color: rgb(208, 20, 145); */
 }
 .Form .SubFormBtn {
-  display: grid;
+  display: var(--flex);
   margin: auto;
   width: var(--size);
   height: auto;
-  /* background-color: blue; */
-  grid-template-columns: repeat(2, 30%);
-  justify-content: space-between;
 }
-.Form .SubFormBtn button {
-  width: 98%;
-  font-size: var(--FONT1);
+.Form .SubFormBtn button:nth-child(1) {
+  margin: 0px 10px 10px 0px;
+  display: var(--block);
+  width: 100%;
+  font-size: 18px;
+  height: 30px;
+}
+.Form .SubFormBtn button:nth-child(2) {
+  margin: 0px 0 10px 0px;
+  display: var(--block);
+  width: 100%;
+  font-size: 18px;
+  height: 30px;
 }
 .hideshow {
   display: none;
@@ -126,7 +128,6 @@ body {
 #Table {
   width: var(--size);
   margin: 10px auto;
-  /* background-color: aqua; */
 }
 #Table #TableHead {
   width: 100%;
@@ -162,10 +163,9 @@ body {
 }
 #Table #TableBody #Body button {
   width: 90%;
-  height: 30px;
-  margin: 5px 0px 0px 5px;
+  height: 25px;
+  margin: 5px 0px 0px 0px;
   border-radius: 10px;
-  margin-right: 2px;
   border: 0;
   font-size: var(--FONT1);
   background-color: rgb(208, 20, 145);
@@ -173,7 +173,7 @@ body {
   cursor: pointer;
 }
 #Table #TableBody #Body span {
-  margin: 10px 0px;
+  margin: 15px 0px 0px 0px;
   text-align: center;
   font-size: var(--FONT1);
   color: white;
@@ -212,7 +212,7 @@ body {
     outline: 0;
     border-radius: 5px;
     color: white;
-    font-size: var(--FONT1);
+    font-size: 18px;
     font-weight: bold;
     background-color: rgb(17, 16, 16);
     transition: all 0.5s;
@@ -233,7 +233,7 @@ body {
     outline: 0;
     border-radius: 5px;
     color: white;
-    font-size: var(--FONT1);
+    font-size: 18px;
     font-weight: bold;
     background-color: rgb(17, 16, 16);
     transition: all 0.5s;
