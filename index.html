@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ayman Halabieh</title>
+	<link rel="stylesheet" href="css/style.CSS">
+</head>
+
+<body>
+	<div class="Head">
+		<h1>CRUDS</h1>
+		<h3>CREATE READ UPDATE DELETE SEARCH</h3>
+	</div>
+	<div class="Form">
+		<input id="Title" placeholder="title" type="text">
+		<div class="SubFormInput">
+			<input placeholder="Price" type="number" name="" id="Price">
+			<input placeholder="Taxes" type="number" name="" id="Taxes">
+			<input placeholder="Ads" type="number" name="" id="Ads">
+			<input placeholder="Discount" type="number" name="" id="Discount">
+			<div class="SpanDiv">
+				<span id="Total">Total : 0</span>
+			</div>
+
+		</div>
+		<input id="Count" placeholder="Count" type="number">
+		<input id="Category" placeholder="Category" type="text">
+		<button id="Create">Create</button>
+		<button style="display: none;" id="Update">Update</button>
+		<input id="SearchTitleInput" placeholder="Search By Title" type="text">
+		<input class="hideshow" id="SearchCategoryInput" placeholder="Search By Category" type="text">
+		<div class="SubFormBtn">
+			<button id="SearchTitleBtn">Search By Title</button>
+			<button id="SearchCategoryBtn">Search By Category</button>
+		</div>
+		<button id="DeleteAllBtn">Delete All</button>
+	</div>
+	<div id="Table">
+		<div id="TableHead">
+			<span>ID</span>
+			<span>Title</span>
+			<span>Pirce</span>
+			<span>Taxes</span>
+			<span>Ads</span>
+			<span>Discount</span>
+			<span>Total</span>
+			<span>Category</span>
+			<span>Update</span>
+			<span>Delete</span>
+		</div>
+		<div id="TableBody">
+
+
+		</div>
+	</div>
+	<footer class="footer">
+		<p>@ By Ayman Halabieh</p>
+	</footer>
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>

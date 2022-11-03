@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --FONT1: 20px;
+}
+
+body {
+  background-color: rgb(35, 35, 35);
+}
+.Head {
+  margin: 15px auto;
+  height: 150px;
+  text-align: center;
+}
+.Head h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px;
+  color: white;
+}
+.Head h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px;
+  color: white;
+}
+
+.Form {
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  /* background: red; */
+  text-align: center;
+}
+.Form input {
+  width: 80%;
+  height: 35px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: var(--FONT1);
+  font-weight: bold;
+  background-color: rgb(17, 16, 16);
+  margin: 10px;
+  transition: all 0.5s;
+}
+
+.Form input:focus {
+  transform: scale(1.1);
+}
+.Form button {
+  width: 80%;
+  height: 35px;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(208, 20, 145);
+  margin: 10px;
+}
+.Form .SubFormInput {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  /* background-color: blue; */
+}
+.Form .SubFormInput input {
+  margin: 5px 5px 5px 0px;
+  height: 35px;
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  width: 19%;
+  color: white;
+  font-size: var(--FONT1);
+  font-weight: bold;
+  background-color: rgb(17, 16, 16);
+  transition: all 0.5s;
+}
+
+.Form .SubFormInput .SpanDiv {
+  display: flex;
+
+  /* background-color: red; */
+  justify-content: left;
+}
+.Form .SubFormInput span {
+  margin-top: 12px;
+  margin-left: 15px;
+  height: 50%;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: var(--FONT1);
+  font-weight: bold;
+
+  /* background-color: rgb(208, 20, 145); */
+}
+.Form .SubFormBtn {
+  display: grid;
+  margin: auto;
+  width: 80%;
+  height: auto;
+  /* background-color: blue; */
+  grid-template-columns: repeat(2, 30%);
+  justify-content: space-between;
+}
+.Form .SubFormBtn button {
+  width: 98%;
+  font-size: var(--FONT1);
+}
+.hideshow {
+  display: none;
+}
+#Table {
+  width: 80%;
+  margin: 10px auto;
+  /* background-color: aqua; */
+}
+#Table #TableHead {
+  width: 100%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(11, 1fr);
+  border-top: 1px solid rgb(87, 87, 87);
+  border-bottom: 1px solid rgb(87, 87, 87);
+}
+#Table #TableHead span {
+  text-align: center;
+  font-size: var(--FONT1);
+  color: white;
+}
+#Table #TableHead span:nth-child(1) {
+  text-align: left;
+  font-size: var(--FONT1);
+  color: white;
+}
+#Table #TableHead span:nth-child(2) {
+  text-align: center;
+  font-size: var(--FONT1);
+  color: white;
+  grid-column: 2/4;
+}
+#Table #TableBody #Body {
+  width: 100%;
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(11, 1fr);
+  border-top: 1px solid rgb(87, 87, 87);
+  border-bottom: 1px solid rgb(87, 87, 87);
+}
+#Table #TableBody #Body button {
+  width: 90%;
+  height: 30px;
+  margin: 5px 0px 0px 5px;
+  border-radius: 10px;
+  margin-right: 2px;
+  border: 0;
+  font-size: var(--FONT1);
+  background-color: rgb(208, 20, 145);
+  color: white;
+  cursor: pointer;
+}
+#Table #TableBody #Body span {
+  margin: 10px 0px;
+  text-align: center;
+  font-size: var(--FONT1);
+  color: white;
+}
+#Table #TableBody #Body span:nth-child(1) {
+  text-align: left;
+  font-size: var(--FONT1);
+  color: white;
+}
+#Table #TableBody #Body span:nth-child(2) {
+  text-align: center;
+  font-size: var(--FONT1);
+  color: white;
+  grid-column: 2/4;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+  :root {
+    --FONT1: 12px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 700px) {
+  :root {
+    --FONT1: 10px;
+  }
+}
+.footer {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: var(--FONT1);
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
